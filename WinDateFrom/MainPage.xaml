@@ -10,7 +10,7 @@
 
     <Grid x:Name="background">
         <Grid.Background>
-            <ImageBrush ImageSource="ms-appx:///background.jpg"/>
+            <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
         </Grid.Background>
         <TextBlock x:Name="tbnome" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Inserisci il nome" VerticalAlignment="Top" RenderTransformOrigin="-0.9,-2.45"/>
         <TextBox x:Name="nome" HorizontalAlignment="Left" Margin="138,3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="521"/>

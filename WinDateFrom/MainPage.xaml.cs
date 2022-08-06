@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,6 +23,8 @@ namespace WinDateFrom
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private static ResourceMap resourceMap = ResourceManager.Current.MainResourceMap.GetSubtree("Resources");
+        private static ResourceContext resourceContext = ResourceContext.GetForCurrentView();
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,11 +39,11 @@ namespace WinDateFrom
                 d1 = DateTime.Parse(data.Text);
             } catch (System.FormatException ex)
             {
-                risultato.Text = "La data non è stata validata.";
+                risultato.Text = resourceMap.GetValue("DataNonValida", resourceContext).ValueAsString+".";
                 return;
             }
             TimeSpan differenza = d - d1;
-            risultato.Text = "Hai incontrato "+nome.Text + " circa "+differenza.Days+" fa"+".";
+            risultato.Text = resourceMap.GetValue("HaiIncontrato", resourceContext).ValueAsString +" "+nome.Text +" "+ resourceMap.GetValue("circa", resourceContext).ValueAsString +" "+differenza.Days+ " "+resourceMap.GetValue("GiorniFa", resourceContext).ValueAsString +".";
             
         }
     }
