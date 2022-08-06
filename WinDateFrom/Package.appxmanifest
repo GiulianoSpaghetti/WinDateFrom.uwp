@@ -8,14 +8,14 @@
 
   <Identity
     Name="5d38bd56-2508-4287-9517-1d0efa66946c"
-    Publisher="CN=numer"
-    Version="1.0.0.0" />
+    Publisher="CN=Giulio Sorrentino"
+    Version="0.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="5d38bd56-2508-4287-9517-1d0efa66946c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>WinDateFrom</DisplayName>
-    <PublisherDisplayName>numer</PublisherDisplayName>
+    <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -37,7 +37,7 @@
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="WinDateFrom"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

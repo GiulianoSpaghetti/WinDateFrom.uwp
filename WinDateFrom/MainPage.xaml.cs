@@ -28,6 +28,8 @@ namespace WinDateFrom
         public MainPage()
         {
             this.InitializeComponent();
+            tbdata.Text = resourceMap.GetValue("InserisciData", resourceContext).ValueAsString+": ";
+            tbnome.Text = resourceMap.GetValue("InserisciNome", resourceContext).ValueAsString+": ";
         }
 
         private void calcola_Click(object sender, RoutedEventArgs e)

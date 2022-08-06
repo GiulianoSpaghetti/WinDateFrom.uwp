@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="circa" xml:space="preserve">
-    <value>circa</value>
+    <value>etwa</value>
   </data>
   <data name="DataNonValida" xml:space="preserve">
-    <value>La data non è stata validata</value>
+    <value>Das Datum ist ungültig</value>
   </data>
   <data name="giorniFa" xml:space="preserve">
-    <value>giorni fa</value>
+    <value>Vor Tagen</value>
   </data>
   <data name="HaiIncontrato" xml:space="preserve">
-    <value>Hai Incontrato</value>
+    <value>Du hast getroffen</value>
   </data>
   <data name="InserisciData" xml:space="preserve">
-    <value>Inserisci la data</value>
+    <value>Gib deinen Namen ein</value>
   </data>
   <data name="InserisciNome" xml:space="preserve">
-    <value>Inserisci il nome</value>
+    <value>Gib deinen Namen ein</value>
   </data>
 </root>

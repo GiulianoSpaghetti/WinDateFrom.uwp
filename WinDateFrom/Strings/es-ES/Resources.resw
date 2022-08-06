@@ -121,18 +121,18 @@
     <value>circa</value>
   </data>
   <data name="DataNonValida" xml:space="preserve">
-    <value>La data non è stata validata</value>
+    <value>La fecha no es válida</value>
   </data>
   <data name="giorniFa" xml:space="preserve">
-    <value>giorni fa</value>
+    <value>hace días</value>
   </data>
   <data name="HaiIncontrato" xml:space="preserve">
-    <value>Hai Incontrato</value>
+    <value>Conociste</value>
   </data>
   <data name="InserisciData" xml:space="preserve">
-    <value>Inserisci la data</value>
+    <value>Introduce la fecha</value>
   </data>
   <data name="InserisciNome" xml:space="preserve">
-    <value>Inserisci il nome</value>
+    <value>Introduzca su nombre</value>
   </data>
 </root>
