@@ -9,7 +9,7 @@
   <Identity
     Name="5d38bd56-2508-4287-9517-1d0efa66946c"
     Publisher="CN=Giulio Sorrentino"
-    Version="0.1.0.0" />
+    Version="1.0.8.0" />
 
   <mp:PhoneIdentity PhoneProductId="5d38bd56-2508-4287-9517-1d0efa66946c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
