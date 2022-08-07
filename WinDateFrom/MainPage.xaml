@@ -24,7 +24,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock Text="Programma" Grid.Row="0"  Grid.Column="0"/>
-        <TextBlock Text="Informazioni" Grid.Row="1" Grid.Column="0" />
+        <TextBlock Text="Creato da Giulio Sorrentino, il coglione italo-napoletano" Grid.Row="1" Grid.Column="0" />
         <TextBlock x:Name="tbnome" Grid.Row="0" Grid.Column="1"/>
         <TextBox x:Name="nome" Grid.Row="0" Grid.Column="2"/>
         <TextBlock x:Name="tbdata" Grid.Row="1" Grid.Column="1"/>
