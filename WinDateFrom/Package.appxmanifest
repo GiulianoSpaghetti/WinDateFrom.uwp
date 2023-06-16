@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="5d38bd56-2508-4287-9517-1d0efa66946c"
-    Publisher="CN=Giulio Sorrentino"
-    Version="1.0.8.0" />
+    Name="21961GiulioSorrentino.31974FA39EC07"
+    Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B"
+    Version="2.0.9.0" />
 
-  <mp:PhoneIdentity PhoneProductId="5d38bd56-2508-4287-9517-1d0efa66946c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="464fa619-5ddb-4801-af1a-950f2e99caf9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>WinDateFrom</DisplayName>

@@ -8,29 +8,50 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="background">
+    <Grid>
+        <Grid x:Name="GApp">
         <Grid.Background>
             <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
-            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="tbnome" Grid.Row="0" Grid.Column="0">Insert the name:</TextBlock>
+            <TextBox x:Name="nome" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock x:Name="tbdata" Grid.Row="1" Grid.Column="0">Insert the date:</TextBlock>
+            <DatePicker x:Name="Data" Grid.Row="1" Grid.Column="1"/>
+            <Button x:Name="calcola" Click="calcola_Click" Grid.Row="2" Grid.Column="0">Calculate</Button>
+            <TextBlock x:Name="risultato" Grid.Row="3" Grid.RowSpan="2"/>
+            <Button x:Name="Informazioni" Grid.Row="4" Grid.Column="0" Click="info_Click">Informations</Button>
+            <TextBlock x:Name="mesiversary" Grid.Row="5" Grid.Column="0"/>
+        </Grid>
+        <Grid x:Name="GInfo" Visibility="Collapsed">
+            <Grid.Background>
+                <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBlock Text="Programma" Grid.Row="0"  Grid.Column="0"/>
-        <TextBlock Text="Creato da Giulio Sorrentino, il coglione italo-napoletano" Grid.Row="1" Grid.Column="0" />
-        <TextBlock x:Name="tbnome" Grid.Row="0" Grid.Column="1"/>
-        <TextBox x:Name="nome" Grid.Row="0" Grid.Column="2"/>
-        <TextBlock x:Name="tbdata" Grid.Row="1" Grid.Column="1"/>
-        <TextBox x:Name="data" Grid.Row="1" Grid.Column="2"/>
-        <Button x:Name="calcola" Content="Calcola" Click="calcola_Click" Grid.Row="2" Grid.Column="1"/>
-        <TextBlock x:Name="risultato" Grid.Row="3" Grid.RowSpan="3"/>
-
-    </Grid>
+            <TextBlock Grid.Row="0">Author: Giulio Sorrentino</TextBlock>
+            <TextBlock Grid.Row="1">A simple date fro knowing how many time passes from a meeting</TextBlock>
+            <TextBlock Grid.Row="2">License: GPL v3 or, in your humble opinion, any later version</TextBlock>
+            <TextBlock Grid.Row="3">Dedicato alle mie 3 dame</TextBlock>
+            <Button x:Name="BtnApp" Grid.Row="4" Click="app_Click">Application</Button>
+            <TextBlock Grid.Row="5">The background was made by me from my Google Pixel 4 and can be found under ShareALike 4.0 International at https://photos.app.goo.gl/Xe8oYFmAQE97ZkXZ6</TextBlock>
+        </Grid>
+  </Grid>
 </Page>
