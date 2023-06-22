@@ -34,10 +34,11 @@ namespace WinDateFrom
             this.InitializeComponent();
             container = localSettings.CreateContainer("WinDateFrom", Windows.Storage.ApplicationDataCreateDisposition.Always);
             int month, years, days;
-            String s, s1, s2;
+            String s, s1, s2, s3;
             s = localSettings.Containers["WinDateFrom"].Values["month"] as string;
             s1 = localSettings.Containers["WinDateFrom"].Values["years"] as string;
             s2 = localSettings.Containers["WinDateFrom"].Values["days"] as string;
+            s3 = localSettings.Containers["WinDateFrom"].Values["name"] as string;
             try
             {
                 month = int.Parse(s);
@@ -49,12 +50,14 @@ namespace WinDateFrom
             {
                 Data.Date = DateTime.Now;
             }
-/*            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+            if (s3 != null)
+                nome.Text = s3;
+            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Unsupported platform");
                 d.Commands.Add(new UICommand("Exit", new UICommandInvokedHandler(exit)));
                 IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
-            }*/
+            }
 
         }
         private void info_Click(object sender, RoutedEventArgs e)
@@ -68,6 +71,10 @@ namespace WinDateFrom
             GApp.Visibility = Visibility.Visible;
         }
 
+        private void app_Delete(object sender, RoutedEventArgs e)
+        {
+            localSettings.Containers["WinDateFrom"].Dispose();   
+        }
         private void exit(IUICommand command)
         {
             Application.Current.Exit();
@@ -84,11 +91,13 @@ namespace WinDateFrom
                 localSettings.Containers["WinDateFrom"].Values["month"] =Data.Date.Month.ToString();
                 localSettings.Containers["WinDateFrom"].Values["years"] =Data.Date.Year.ToString();
                 localSettings.Containers["WinDateFrom"].Values["days"] =Data.Date.Day.ToString();
+                localSettings.Containers["WinDateFrom"].Values["name"] = nome.Text;
                 if (nome.Text == "")
                     risultato.Text = $"{differenza.Days} days have passed";
                 else
-                    risultato.Text = risultato.Text = $"You meet {nome.Text} about ${differenza.TotalDays} days ago.";
-                if (d.Day == Data.Date.Day && differenza.TotalDays > 0)
+                    risultato.Text = risultato.Text = $"You meet {nome.Text} about {differenza.Days} days ago.";
+
+                    if (d.Day == Data.Date.Day && differenza.TotalDays > 1)
                 {
                     if (d.Month == Data.Date.Month)
                         mesiversary.Text = "Is your Anniversary";
