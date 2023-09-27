@@ -1,6 +1,7 @@
 # WinDateFrom
-Il primo programma per pc e per smartphone che non è un videogioco dedicato alle donne.
+Il primo programma per pc e per smartphone dedicato alle donne che non è un videogioco.
 Serve per rompere il ghiaccio durante una relazione interpersonale, ossia per approcciare.
+
 # Come installare
 
 # The old fashion compiled way
