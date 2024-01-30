@@ -9,9 +9,9 @@
   <Identity
     Name="21961GiulioSorrentino.31974FA39EC07"
     Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B"
-    Version="2.0.26.0" />
+    Version="2.1.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="464fa619-5ddb-4801-af1a-950f2e99caf9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="9f4e112b-b74f-48f6-abef-b13211964cb8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>WinDateFrom</DisplayName>

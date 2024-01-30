@@ -10,13 +10,13 @@
 
     <Grid>
         <Grid x:Name="GApp">
-        <Grid.Background>
-            <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />
@@ -33,27 +33,28 @@
             <TextBlock x:Name="risultato" Grid.Row="3" Grid.RowSpan="2"/>
             <Button x:Name="Informazioni" Grid.Row="4" Grid.Column="0" Click="info_Click">Informations</Button>
             <TextBlock x:Name="mesiversary" Grid.Row="5" Grid.Column="0"/>
+            <Button x:Name="augurio" Grid.Row="5" Grid.Column="1" Click="augurio_Click" Visibility="Collapsed">Wish a happy anniversary</Button>
         </Grid>
         <Grid x:Name="GInfo" Visibility="Collapsed">
             <Grid.Background>
                 <ImageBrush ImageSource="ms-appx:///Resources/background.jpg"/>
             </Grid.Background>
             <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-          </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0">Author: Giulio Sorrentino</TextBlock>
-            <TextBlock Grid.Row="1">A simple date fro knowing how many time passes from a meeting</TextBlock>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0">© Giulio Sorrentino 2024</TextBlock>
+            <TextBlock Grid.Row="1">A simple date for count how many time passes from an encounter</TextBlock>
             <TextBlock Grid.Row="2">License: GPL v3 or, in your humble opinion, any later version</TextBlock>
-            <TextBlock Grid.Row="3">Dedicato alle mie 3 dame</TextBlock>
+            <TextBlock Grid.Row="3">Dedicato ad Annachiara, a Francesca e a Giovanna</TextBlock>
             <Button x:Name="BtnApp" Grid.Row="4" Click="app_Click">Application</Button>
             <Button x:Name="BtnDelete" Grid.Row="5" Click="app_Delete">Delete Settings</Button>
             <TextBlock Grid.Row="5">The background was made by me from my Google Pixel 4 and can be found under ShareALike 4.0 International at https://photos.app.goo.gl/Xe8oYFmAQE97ZkXZ6</TextBlock>
         </Grid>
-  </Grid>
+    </Grid>
 </Page>

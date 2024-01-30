@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
-using Windows.ApplicationModel.Resources.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 using Windows.System.Profile.SystemManufacturers;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -28,6 +27,7 @@ namespace WinDateFrom
     {
         private Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
         private Windows.Storage.ApplicationDataContainer container;
+        private static string anniversario = "";
         public MainPage()
         {
             MessageDialog d;
@@ -60,6 +60,12 @@ namespace WinDateFrom
             }
 
         }
+        private async void augurio_Click(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri($"https://twitter.com/intent/tweet?text=Happy%20{anniversario}%20my%20love"));
+            augurio.Visibility = Visibility.Collapsed;
+
+        }
         private void info_Click(object sender, RoutedEventArgs e)
         {
             GApp.Visibility = Visibility.Collapsed;
@@ -73,7 +79,7 @@ namespace WinDateFrom
 
         private void app_Delete(object sender, RoutedEventArgs e)
         {
-            localSettings.Containers["WinDateFrom"].Dispose();   
+            localSettings.Containers["WinDateFrom"].Dispose();
         }
         private void exit(IUICommand command)
         {
@@ -82,27 +88,37 @@ namespace WinDateFrom
         private void calcola_Click(object sender, RoutedEventArgs e)
         {
             DateTime d = DateTime.Now;
-            
+
             TimeSpan differenza = d - Data.Date;
+            anniversario = "";
+            augurio.Visibility= Visibility.Collapsed;
             if (differenza.TotalMinutes < 0)
                 risultato.Text = "Invalid rvalue";
             else
             {
-                localSettings.Containers["WinDateFrom"].Values["month"] =Data.Date.Month.ToString();
-                localSettings.Containers["WinDateFrom"].Values["years"] =Data.Date.Year.ToString();
-                localSettings.Containers["WinDateFrom"].Values["days"] =Data.Date.Day.ToString();
+                localSettings.Containers["WinDateFrom"].Values["month"] = Data.Date.Month.ToString();
+                localSettings.Containers["WinDateFrom"].Values["years"] = Data.Date.Year.ToString();
+                localSettings.Containers["WinDateFrom"].Values["days"] = Data.Date.Day.ToString();
                 localSettings.Containers["WinDateFrom"].Values["name"] = nome.Text;
                 if (nome.Text == "")
                     risultato.Text = $"{differenza.Days} days have passed";
                 else
                     risultato.Text = risultato.Text = $"You meet {nome.Text} about {differenza.Days} days ago.";
 
-                    if (d.Day == Data.Date.Day && differenza.TotalDays > 1)
+                if (d.Day == Data.Date.Day && differenza.TotalDays > 1)
                 {
                     if (d.Month == Data.Date.Month)
+                    {
                         mesiversary.Text = "Is your Anniversary";
+                        anniversario = "Anniversary";
+                    }
                     else
+                    {
                         mesiversary.Text = "Is your mesiversary";
+                        anniversario = "mesiversary";
+                    }
+                    if (nome.Text!="" && anniversario!="")
+                        augurio.Visibility = Visibility.Visible;
                 }
                 else
                     mesiversary.Text = "";
