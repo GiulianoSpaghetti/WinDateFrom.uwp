@@ -42,6 +42,11 @@ Il package è sia per arm64 che per amd64, è sufficiente registrare la chiave n
 Può essere usata per creare chioschi.
 
 
+## Screenshot dell'app
+
+![Screenshot_2025-01-12_10-33-56](https://github.com/user-attachments/assets/661582f5-9775-48d9-949b-66aa535be33a)
+
+
 ## Donations
 
 http://numerone.altervista.org/donazioni.php
