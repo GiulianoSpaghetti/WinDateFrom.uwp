@@ -44,7 +44,7 @@ Può essere usata per creare chioschi.
 
 ## Screenshot dell'app
 
-![Screenshot_2025-01-12_10-33-56](https://github.com/user-attachments/assets/661582f5-9775-48d9-949b-66aa535be33a)
+![Screenshot_2025-01-12_10-43-49](https://github.com/user-attachments/assets/ad6636b4-3da6-43cf-af85-e2abaf554a9f)
 
 
 ## Donations
