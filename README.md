@@ -22,10 +22,6 @@ Questa non è matematica ma è psicologia spicciola, significa capire la ... bel
 
 Installa visual studio 2022, scarica il progetto usando git selezionando download from existing git repository e quindi compilalo.
 
-## Su android
-
-
-[![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.windatefrom)
 
 ## Donations
 
