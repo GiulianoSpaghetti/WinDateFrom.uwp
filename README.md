@@ -31,7 +31,7 @@ Le dipedenze sono gli appx.
 ## The old fashion way
 Per prima cosa registrate il vostro account di developer nell'apposita sezione in alto a destra, dopo cliccate su "show visual studio pin" e salvatevelo, ora pasate al pc, aprite il progetto, cliccate su dispositivo remoto invece che su computer locale quando dovete compilare, indicate l'ip della xbox, aspettate che vi chiede il pin, inseritelo e compilate.
 
-A breve nella sezione bassa centrale comparirà il numfortune, basta avviarla per poter giocare.
+A breve nella sezione bassa centrale comparirà il programma, basta avviarla per poter giocare.
 
 
 ## Come installarlo sul surface
