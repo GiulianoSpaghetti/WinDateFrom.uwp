@@ -3,7 +3,7 @@
 Il progetto così come è funziona, solo che venite invitati a ricompilarlo su pc impostando il debug sulla prima linea del main, scoprendo come si chiama la variabile di sistema che contiene la mainwindow ed a impostarla a NULL.
 
 Il progetto viene dichiarato legacy, per il momento.
-Su windows c'è la briscola in maui o in material, mentre su xbox al momento non c'è soluzione, ma ci stanno lavorando.
+Su windows non c'è soluzione, perché il vero date from va usato in mobiità e non negli uffici.
 
 ## WinDateFrom
 
