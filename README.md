@@ -1,4 +1,12 @@
+## ATTENZIONE
+
+Il progetto così come è funziona, solo che venite invitati a ricompilarlo su pc impostando il debug sulla prima linea del main, scoprendo come si chiama la variabile di sistema che contiene la mainwindow ed a impostarla a NULL.
+
+Il progetto viene dichiarato legacy, per il momento.
+Su windows c'è la briscola in maui o in material, mentre su xbox al momento non c'è soluzione, ma ci stanno lavorando.
+
 ## WinDateFrom
+
 Il primo programma per pc e per smartphone dedicato alle donne che non è un videogioco.
 Serve per rompere il ghiaccio durante una relazione interpersonale, ossia per approcciare.
 
